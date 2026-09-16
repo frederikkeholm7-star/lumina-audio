@@ -1,21 +1,90 @@
-*{
-box-sizing: border-box;
-  display: flex;
-width: 100%;
-flex-direction: column;
-align-items: flex-start;  
-background: #FFF;
+* {
+    box-sizing: border-box;
 }
 
-.header{
+
+/* Hele headeren */
+header {
+    height: 96px;
+    padding: 24px 120px;
+    background: #EDEBE8;
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.32) inset,
+                0 5px 18px 0 rgba(46, 38, 33, 0.07);
+    box-sizing: border-box;
+}
+
+/* Nav-containeren inde i headeren */
+header nav {
     display: flex;
-height: 96px;
-padding: 24px 120px;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
-background: #EDEBE8;
-box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.32) inset, 0 5px 18px 0 rgba(46, 38, 33, 0.07);
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Logo + teksten "lumina audio*/
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+/* Kun logo-billedet */
+.brand img{
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1 / 1;
+}
+/* Kun teksten "LUMINA Audio" */
+.brand span{
+    color: #000;
+    text-shadow: 0 1px 1px rgba(26, 20, 18, 0.08);
+    font-family: MuseoModerno;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 123.81% */
+    letter-spacing: 3px;
+    list-style: none;
+}
+
+/* Hele gruppen med de 3 navigation-links */
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+/* Hvert liste-element */
+.header-nav li {
+    color: #000;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(26, 20, 18, 0.07);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 1px;
+    
+}
+
+/* Selve de 3 links */
+.header-nav a{
+    color: #000;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(26, 20, 18, 0.07);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+        text-decoration: none;
 }
 
 .hero{
@@ -33,6 +102,20 @@ padding: 34px 120px;
 align-items: flex-start;
 align-self: stretch;
 background: #EDEBE8;
+}
+
+
+
+.retailer-logos{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    width: 154px;
+    height: 54px;
+    flex-shrink: 0;
+
+
+    
 }
 
 .lifestyle-carousel{
