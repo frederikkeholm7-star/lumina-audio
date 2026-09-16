@@ -43,7 +43,72 @@ align-items: center;
 gap: 48px;
 align-self: stretch;
 background: #EDEBE8;
+
+  }
+.carousel-cards{
+    display: flex;
+
+justify-content: center;
+align-items: center;
+gap: 28px;
+align-self: stretch;
+flex-direction: row;
+background: #EDEBE8;
 }
+
+.carousel-card-1{
+    display: flex;
+   color: #0B0A09;
+text-align: center;
+font-family: Lora;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+letter-spacing: 0.5px;
+border-radius: 24px;
+}
+
+.carousel-card-2{
+    display: flex;
+   color: #0B0A09;
+text-align: center;
+font-family: Lora;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+letter-spacing: 0.5px;
+border-radius: 24px;
+}
+
+.carousel-card-3{
+    display: flex;
+   color: #0B0A09;
+text-align: center;
+font-family: Lora;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+letter-spacing: 0.5px;
+border-radius: 24px;
+}
+
+.carousel-arrow-carousel-arrow-left{
+    display: flex;
+    color: rgba(33, 28, 26, 0.88);
+    font-family: Manrope;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+
+
+
+
 
 .social-connect{
     display: flex;
