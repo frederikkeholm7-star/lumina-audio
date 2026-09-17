@@ -268,3 +268,71 @@ header > nav {
 .carousel-dot.active {
     background-color: #1F1D1A;
 }
+
+/*Social Connect*/
+
+.social-connect {
+    display: flex;
+    align-items: center;
+
+    padding: 96px 120px;
+    gap: 80px;
+
+    background-color: #C8CEC0;
+}
+
+.social-connect-image,
+.social-connect-content {
+    flex: 1;
+}
+
+.social-connect-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.section-label {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.social-connect-content h2 {
+    margin: 0;
+
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.social-connect-content > p:not(.section-label) {
+    margin: 0;
+
+    font-family: "Lora", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+    max-width: 520px;
+}
+
+.app-downloads {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.app-downloads img {
+    display: block;
+    height: 48px;
+    width: auto;
+}
