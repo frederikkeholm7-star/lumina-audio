@@ -129,10 +129,26 @@ header > nav {
 /* Området til produktbilledet i højre side */
 .hero-product-area {
     flex: 1;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+}
+
+/* Skaber det bløde rosa glow bag højttaleren */
+.hero-product-area::before {
+    content: "";
+    position: absolute;
+
+    width: 650px;
+    height: 420px;
+
+    background: rgba(214, 159, 172, 0.65);
+    filter: blur(80px);
+    border-radius: 50%;
+
+    z-index: 0;
 }
 
 /* Størrelse og skalering af produktbilledet */
@@ -141,6 +157,9 @@ header > nav {
     width: 100%;
     max-width: 616px;
     height: auto;
+
+    position: relative;
+    z-index: 1;
 }
 
 /* Styling af "Order now"-knappen */
@@ -177,6 +196,20 @@ header > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
+
+    padding: 32px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow:
+
+        0 -1px 5px rgba(46, 38, 33, 0.05) inset,
+        0 1px 2px rgba(255, 255, 255, 0.62) inset,
+        0 14px 34px rgba(38, 33, 28, 0.10);
+
+    backdrop-filter: blur(15px);
 }
 
 /* Styrer størrelse og skalering af de enkelte forhandlerlogoer */
@@ -485,17 +518,29 @@ header > nav {
 
 /* Styrer afstand og baggrundsfarve for hele reviews-sektionen */
 .reviews {
-    padding: 96px 120px 48px;
+    padding: 48px 120px 0px;
     background-color: #EAE2ED;
 }
 /* Samler overskrift, Trustpilot-logo og score lodret og centrerer dem */
 .reviews-summary {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    gap: 16px;
-}
+    justify-content: space-between;
+
+    padding: 32px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.18);
+
+    box-shadow: 
+        0 -1px 5px rgba(46, 38, 33, 0.05) inset,
+        0 1px 2px rgba(255, 255, 255, 0.62) inset,
+        0 14px 34px rgba(38, 33, 28, 0.10);
+
+    backdrop-filter: blur(15px);
+};
+    
 
 /* Styling af overskriften "Loved out loud." */
 .reviews-summary h2 {
