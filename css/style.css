@@ -531,7 +531,7 @@ header > nav {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: #eee9f1;
+    background: #EAE2ED;
     padding: 40px 50px;
 }
 
@@ -540,7 +540,7 @@ header > nav {
     flex-direction: row;
     gap: 20px;
     width: 100%;
-    background: #eee9f1;
+    background: #EAE2ED;
     padding: 40px 50px;
 }
 
@@ -566,4 +566,101 @@ header > nav {
 .review-text {
     background: #f5f3f2;
     color: #685D54;
+}
+
+/* ========================================
+   FOOTER
+   Sidens afsluttende sektion med logo, sociale medier og navigation
+   ======================================== */
+
+/* Opbygger footeren i tre områder og placerer dem vandret med afstand imellem */
+footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 64px 120px;
+    background-color: #685D54;
+    color: #fff;
+}
+
+/* Gør alle links i footeren hvide og fjerner standard-understregningen */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Placerer logo og LUMINA Audio-navn ved siden af hinanden */
+.footer-brand > a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Styrer størrelsen på det hvide LUMINA-logo */
+.footer-brand img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+/* Styling af LUMINA Audio-navnet ved logoet */
+.footer-brand span {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 3px;
+}
+
+/* Styling af copyright-teksten under logoet */
+.footer-brand > p {
+    margin: 20px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: .7;
+}
+
+/* Placerer ikonerne til sociale medier ved siden af hinanden */
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Styrer størrelsen på ikonerne til sociale medier */
+.footer-socials img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Fjerner standard-listestyling og placerer footerens navigationslinks vandret */
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+/* Styling af navigationslinks i footeren */
+.footer-links a {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+/* Styling af Privacy og Terms nederst i footerens navigation */
+.footer-links > p {
+    margin: 24px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: .7;
 }
