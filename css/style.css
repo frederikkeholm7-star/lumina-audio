@@ -326,19 +326,17 @@ header > nav {
    App-sektion med telefonbillede, tekst og download-knapper
    ======================================== */
 
-/* ========================================
-   SOCIAL CONNECT
-   ======================================== */
-
 .social-connect {
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 30px;
     border: 1px solid rgba(200, 206, 192, 0.42);
-    background: rgba(200, 206, 192, 0.42);
+    background:#C8cec0;
     box-shadow: 0 -1px 5px 0 rgba(46, 38, 33, 0.05) inset, 0 1px 2px 0 rgba(255, 255, 255, 0.62) inset, 0 14px 34px 0 rgba(38, 33, 28, 0.10);
     backdrop-filter: blur(15px);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .social-connect-image {
@@ -374,14 +372,43 @@ header > nav {
 .app-downloads img:first-child {
     height: 60px;
 }
-
 .section-label {
     width: 100%;
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+.section-label {
+    margin: 0;
+    padding: 0;
 
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.social-connect-content h2 {
+    margin: 24px 0;
+
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.social-connect-content > p:not(.section-label) {
+    margin: 0 0 24px;
+
+    font-family: "Lora", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+    max-width: 520px;
+}
 
 
 /*Product Details*/
