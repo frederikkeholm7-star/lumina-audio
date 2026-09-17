@@ -326,85 +326,63 @@ header > nav {
    App-sektion med telefonbillede, tekst og download-knapper
    ======================================== */
 
+/* ========================================
+   SOCIAL CONNECT
+   ======================================== */
 
-/* Placerer telefonbilledet og tekstindholdet ved siden af hinanden */
 .social-connect {
     display: flex;
+    flex-direction: row;
     align-items: center;
-
-    padding: 96px 120px;
-    gap: 80px;
-
-    background-color: #C8CEC0;
+    border-radius: 30px;
+    border: 1px solid rgba(200, 206, 192, 0.42);
+    background: rgba(200, 206, 192, 0.42);
+    box-shadow: 0 -1px 5px 0 rgba(46, 38, 33, 0.05) inset, 0 1px 2px 0 rgba(255, 255, 255, 0.62) inset, 0 14px 34px 0 rgba(38, 33, 28, 0.10);
+    backdrop-filter: blur(15px);
 }
 
-/* Giver billedområdet og tekstområdet lige meget plads */
-.social-connect-image,
+.social-connect-image {
+    width: 50%;
+}
+
+.social-connect-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 .social-connect-content {
-    flex: 1;
+    width: 50%;
+    padding: 40px;
+    
 }
 
-/* Samler tekstindholdet lodret med afstand mellem elementerne */
-.social-connect-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-}
-
-/* Den lille "LUMINA SOCIAL CONNECT"-tekst over overskriften */
-.section-label {
-    margin: 0;
-    font-family: "Manrope", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-/* Hovedoverskriften i Social Connect */
-.social-connect-content h2 {
-    margin: 0;
-
-    font-family: "MuseoModerno", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-}
-
-/* Brødteksten i Social Connect – men ikke section-label */
-.social-connect-content > p:not(.section-label) {
-    margin: 0;
-
-    font-family: "Lora", serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-
-    max-width: 520px;
-}
-
-/* Placerer App Store- og Google Play-knapperne ved siden af hinanden */
 .app-downloads {
+   
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+
 }
 
-/* Styrer størrelsen på App Store- og Google Play-billederne */
 .app-downloads img {
     display: block;
     height: 48px;
     width: auto;
 }
 
-/* Sørger for at telefonbilledet ikke bliver bredere end sit område */
-.social-connect-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.app-downloads img:first-child {
+    height: 60px;
 }
+
+.section-label {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
 
 /*Product Details*/
 
@@ -475,221 +453,3 @@ header > nav {
 
 /*Reviews Sektionen*/
 
-.reviews {
-    padding: 96px 120px 48px;
-    background-color: #EAE2ED;
-}
-
-.reviews-summary {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-}
-
-.reviews-summary h2 {
-    margin: 0;
-
-    font-family: "MuseoModerno", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-}
-
-.reviews-summary p {
-    margin: 0;
-
-    font-family: "Manrope", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.reviews-summary img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/*Review Cards*/
-
-.review-cards {
-    position: relative;
-    padding: 48px 120px 96px;
-    background-color: #EDEBE8;
-}
-
-.review-cards-container {
-    display: flex;
-    align-items: stretch;
-    gap: 24px;
-}
-
-.review-card {
-    flex: 1;
-}
-
-.review-card {
-    flex: 1;
-
-    padding: 32px;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-}
-
-.review-card > p {
-    margin: 0;
-    font-family: "Lora", serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-.review-card .review-author {
-    margin-top: 24px;
-    font-family: "Manrope", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-}
-
-.review-card .review-stars {
-    margin-bottom: 16px;
-    font-family: "Manrope", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 2px;
-}
-
-.review-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 48px;
-    height: 48px;
-
-    border: none;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-
-    cursor: pointer;
-    z-index: 2;
-}
-
-.review-arrow-left {
-    left: 72px;
-}
-
-.review-arrow-right {
-    right: 72px;
-}
-
-.review-arrow::before {
-    content: "";
-    display: block;
-
-    width: 10px;
-    height: 10px;
-
-    border-top: 2px solid #1F1D1A;
-    border-right: 2px solid #1F1D1A;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.review-arrow-right::before {
-    transform: translate(-65%, -50%) rotate(45deg);
-}
-
-.review-arrow-left::before {
-    transform: translate(-35%, -50%) rotate(-135deg);
-}
-
-
-footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    padding: 64px 120px;
-
-    background-color: #685D54;
-    color: #FFFFFF;
-}
-
-footer a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.footer-brand > a {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.footer-brand img {
-    display: block;
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
-
-.footer-brand span {
-    font-family: "MuseoModerno", sans-serif;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 3px;
-}
-
-.footer-brand > p {
-    margin: 20px 0 0;
-    font-family: "Manrope", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    opacity: 0.7;
-}
-
-.footer-socials {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.footer-socials img {
-    display: block;
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
-.footer-links ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    display: flex;
-    gap: 12px;
-}
-
-.footer-links a {
-    font-family: "Manrope", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 22px;
-}
-
-.footer-links > p {
-    margin: 24px 0 0;
-    font-family: "Manrope", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    opacity: 0.7;
-}
