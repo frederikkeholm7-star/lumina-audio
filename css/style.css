@@ -478,5 +478,92 @@ header > nav {
     height: auto;
 }
 
-/*Reviews Sektionen*/
+/* ========================================
+   REVIEWS SEKTION
+   Trustpilot-score og samlet anmeldelsesoversigt
+   ======================================== */
 
+/* Styrer afstand og baggrundsfarve for hele reviews-sektionen */
+.reviews {
+    padding: 96px 120px 48px;
+    background-color: #EAE2ED;
+}
+/* Samler overskrift, Trustpilot-logo og score lodret og centrerer dem */
+.reviews-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+/* Styling af overskriften "Loved out loud." */
+.reviews-summary h2 {
+    margin: 0;
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+/* Styling af teksten med Trustpilot-score og antal anmeldelser */
+.reviews-summary p {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Sørger for at Trustpilot-logo skalerer uden at blive forvrænget */
+.reviews-summary img {
+    display: block;
+    width: 140px;
+    height: auto;
+}
+
+/* ========================================
+   REVIEW CARDS
+   ======================================== */
+
+.review-cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #eee9f1;
+    padding: 40px 50px;
+}
+
+.review-cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    background: #eee9f1;
+    padding: 40px 50px;
+}
+
+.review-card {
+    width: 33%;
+    padding: 30px;
+    background: #f5f3f2;
+    border-radius: 30px;
+    border: 1px solid white;
+    box-shadow: 0 10px 25px rgba(60, 50, 60, 0.12);
+}
+
+.review-stars {
+    background: #f5f3f2;
+    color: #685D54;
+}
+
+.review-author {
+    background: #f5f3f2;
+    color: #685D54;
+}
+
+.review-text {
+    background: #f5f3f2;
+    color: #685D54;
+}
