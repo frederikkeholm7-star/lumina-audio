@@ -1,6 +1,14 @@
+/* ========================================
+GENEREL STYLING - Gælder for hele hjemmesiden
+ ========================================*/
+
+/* Sørger for at padding og border tæller med i elementernes størrelse */
+
 * {
     box-sizing: border-box;
 }
+
+/* Fjerner browserens standardafstand rundt om siden */
 
 html,
 body {
@@ -8,25 +16,34 @@ body {
     padding: 0;
 }
 
+/* Sidens grundlæggende baggrundsfarve */
+
 body {
     background-color: #EDEBE8;
 }
 
+/* ========================================
+   HEADER
+   Logo, brandnavn og navigation
+   ======================================== */
+
+   /* Fjerner standard link-styling fra links i headeren */
 header a {
     color: #000000;
     text-decoration: none;
 }
 
+/* Navigationen i højre side af headeren */
 .header-nav {
     margin: 0;
     padding: 0;
     list-style: none;
-
     display: flex;
     align-items: center;
     gap: 36px;
 }
 
+/* Placerer brand og navigation på hver sin side af headeren */
 header > nav {
     height: 100%;
     padding: 24px 120px;
@@ -36,12 +53,14 @@ header > nav {
     justify-content: space-between;
 }
 
+/* Samler logo og LUMINA Audio-navnet på én række */
 .brand {
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
+/* Selve LUMINA-logoet i headeren */
 .brand img {
     width: 48px;
     height: 48px;
@@ -51,6 +70,7 @@ header > nav {
     box-shadow: 0 4px 10px rgba(46, 38, 33, 0.13);
 }
 
+/* Teksten "LUMINA Audio" ved siden af logoet */
 .brand span {
     font-family: "MuseoModerno", sans-serif;
     font-size: 21px;
@@ -59,8 +79,12 @@ header > nav {
     letter-spacing: 3px;
 }
 
-/*Hero sektion*/
+/* ========================================
+   HERO SEKTION
+   Intro-tekst, produktbillede og bestillingsknap
+   ======================================== */
 
+   /* Placerer hero-teksten og produktområdet ved siden af hinanden */
 .hero {
     display: flex;
     align-items: center;
@@ -71,6 +95,7 @@ header > nav {
     background-color: #EDEBE8;
 }
 
+/* Samler overskrift, brødtekst og knap i venstre side */
 .hero-text {
     width: 480px;
     flex-shrink: 0;
@@ -81,6 +106,7 @@ header > nav {
     gap: 24px;
 }
 
+/* Hero-sektionens store hovedoverskrift */
 .hero-text h1 {
     margin: 0;
 
@@ -90,6 +116,7 @@ header > nav {
     line-height: 80px;
 }
 
+/* Brødteksten under hero-overskriften */
 .hero-text > p {
     margin: 0;
 
@@ -99,6 +126,7 @@ header > nav {
     line-height: 32px;
 }
 
+/* Området til produktbilledet i højre side */
 .hero-product-area {
     flex: 1;
 
@@ -107,6 +135,7 @@ header > nav {
     justify-content: center;
 }
 
+/* Størrelse og skalering af produktbilledet */
 .hero-product-area img {
     display: block;
     width: 100%;
@@ -114,6 +143,7 @@ header > nav {
     height: auto;
 }
 
+/* Styling af "Order now"-knappen */
 .hero-button {
     padding: 16px 28px;
 
@@ -131,19 +161,25 @@ header > nav {
     cursor: pointer;
 }
 
-/*Retailer sektion*/
+/* ========================================
+   RETAILER SEKTION
+   Logoer for forhandlere af LUMINA Audio
+   ======================================== */
 
+   /* Bestemmer afstand og baggrund for hele retailer-sektionen */
 .retailers {
     padding: 40px 120px;
-    background-color: #FFFFFF;
+    background-color: #EDEBE8;
 }
 
+/* Placerer forhandlerlogoerne på én vandret række med plads imellem */
 .retailer-logos {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Styrer størrelse og skalering af de enkelte forhandlerlogoer */
 .retailer-logos img {
     display: block;
     max-width: 160px;
@@ -151,7 +187,12 @@ header > nav {
     object-fit: contain;
 }
 
-/* lifestyle-carousel*/
+/* ========================================
+   LIFESTYLE CAROUSEL
+   Billedkort, pile og navigationsprikker
+   ======================================== */
+
+/* Hele carousel-sektionen og dens afstand til resten af siden */
 
 .lifestyle-carousel {
     position: relative;
@@ -162,20 +203,22 @@ header > nav {
     overflow: hidden;
 }
 
+/* Placerer de tre billedkort på én vandret række */
 .carousel-cards {
     display: flex;
     align-items: stretch;
     gap: 24px;
 }
 
+/* Styling af hvert enkelt billedkort */
 .carousel-cards > div {
     flex: 1;
     position: relative;
     overflow: hidden;
-
     border-radius: 24px;
 }
 
+/* Størrelse og beskæring af billederne i kortene */
 .carousel-cards > div img {
     display: block;
 
@@ -185,6 +228,7 @@ header > nav {
     object-fit: cover;
 }
 
+/* Teksten oven på hvert carousel-billede */
 .carousel-cards > div p {
     position: absolute;
     left: 32px;
@@ -200,6 +244,7 @@ header > nav {
     line-height: 32px;
 }
 
+/* Grundstyling af begge navigationspile */
 .carousel-arrow {
     position: absolute;
     top: 50%;
@@ -216,15 +261,17 @@ header > nav {
     cursor: pointer;
     z-index: 2;
 }
-
+/* Placering af venstre pil */
 .carousel-arrow-left {
     left: 136px;
 }
 
+/* Placering af højre pil */
 .carousel-arrow-right {
     right: 136px;
 }
 
+/* Laver pilesymbolet inde i de runde knapper */
 .carousel-arrow::before {
     content: "";
     display: block;
@@ -240,14 +287,17 @@ header > nav {
     left: 50%;
 }
 
+/* Drejer pilesymbolet mod højre */
 .carousel-arrow-right::before {
     transform: translate(-65%, -50%) rotate(45deg);
 }
 
+/* Drejer pilesymbolet mod venstre */
 .carousel-arrow-left::before {
     transform: translate(-35%, -50%) rotate(-135deg);
 }
 
+/* Samler navigationsprikkerne under billederne */
 .carousel-dots {
     display: flex;
     justify-content: center;
@@ -257,6 +307,7 @@ header > nav {
     margin-top: 24px;
 }
 
+/* Styling af en almindelig navigationsprik */
 .carousel-dot {
     width: 8px;
     height: 8px;
@@ -265,12 +316,18 @@ header > nav {
     background-color: #C8C5C1;
 }
 
+/* Gør prikken for det aktive slide mørk */
 .carousel-dot.active {
     background-color: #1F1D1A;
 }
 
-/*Social Connect*/
+/* ========================================
+   SOCIAL CONNECT
+   App-sektion med telefonbillede, tekst og download-knapper
+   ======================================== */
 
+
+/* Placerer telefonbilledet og tekstindholdet ved siden af hinanden */
 .social-connect {
     display: flex;
     align-items: center;
@@ -281,11 +338,13 @@ header > nav {
     background-color: #C8CEC0;
 }
 
+/* Giver billedområdet og tekstområdet lige meget plads */
 .social-connect-image,
 .social-connect-content {
     flex: 1;
 }
 
+/* Samler tekstindholdet lodret med afstand mellem elementerne */
 .social-connect-content {
     display: flex;
     flex-direction: column;
@@ -293,18 +352,18 @@ header > nav {
     gap: 24px;
 }
 
+/* Den lille "LUMINA SOCIAL CONNECT"-tekst over overskriften */
 .section-label {
     margin: 0;
-
     font-family: "Manrope", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
 
+/* Hovedoverskriften i Social Connect */
 .social-connect-content h2 {
     margin: 0;
 
@@ -314,6 +373,7 @@ header > nav {
     line-height: 56px;
 }
 
+/* Brødteksten i Social Connect – men ikke section-label */
 .social-connect-content > p:not(.section-label) {
     margin: 0;
 
@@ -325,18 +385,21 @@ header > nav {
     max-width: 520px;
 }
 
+/* Placerer App Store- og Google Play-knapperne ved siden af hinanden */
 .app-downloads {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
+/* Styrer størrelsen på App Store- og Google Play-billederne */
 .app-downloads img {
     display: block;
     height: 48px;
     width: auto;
 }
 
+/* Sørger for at telefonbilledet ikke bliver bredere end sit område */
 .social-connect-image img {
     display: block;
     max-width: 100%;
