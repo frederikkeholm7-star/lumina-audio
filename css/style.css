@@ -336,3 +336,297 @@ header > nav {
     height: 48px;
     width: auto;
 }
+
+.social-connect-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Product Details*/
+
+.product-details {
+    padding: 96px 120px;
+    background-color: #EDEBE8;
+}
+
+.product-details > h2 {
+    margin: 0 0 48px 0;
+
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.product-details-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.product-specs,
+.product-details-image {
+    flex: 1;
+}
+
+.product-specs {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-specs > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(31, 29, 26, 0.2);
+}
+
+.product-specs dt {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.product-specs dd {
+    margin: 0;
+
+    font-family: "Lora", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    text-align: right;
+}
+
+.product-details-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Reviews Sektionen*/
+
+.reviews {
+    padding: 96px 120px 48px;
+    background-color: #EAE2ED;
+}
+
+.reviews-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.reviews-summary h2 {
+    margin: 0;
+
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.reviews-summary p {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.reviews-summary img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Review Cards*/
+
+.review-cards {
+    position: relative;
+    padding: 48px 120px 96px;
+    background-color: #EDEBE8;
+}
+
+.review-cards-container {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.review-card {
+    flex: 1;
+}
+
+.review-card {
+    flex: 1;
+
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.review-card > p {
+    margin: 0;
+    font-family: "Lora", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.review-card .review-author {
+    margin-top: 24px;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.review-card .review-stars {
+    margin-bottom: 16px;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.review-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.review-arrow-left {
+    left: 72px;
+}
+
+.review-arrow-right {
+    right: 72px;
+}
+
+.review-arrow::before {
+    content: "";
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    border-top: 2px solid #1F1D1A;
+    border-right: 2px solid #1F1D1A;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.review-arrow-right::before {
+    transform: translate(-65%, -50%) rotate(45deg);
+}
+
+.review-arrow-left::before {
+    transform: translate(-35%, -50%) rotate(-135deg);
+}
+
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 64px 120px;
+
+    background-color: #685D54;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-brand > a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-brand img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.footer-brand span {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 3px;
+}
+
+.footer-brand > p {
+    margin: 20px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-socials img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    gap: 12px;
+}
+
+.footer-links a {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.footer-links > p {
+    margin: 24px 0 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.7;
+}
